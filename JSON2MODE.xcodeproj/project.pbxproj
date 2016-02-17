@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9C7B0F81C7312B300C321AF /* NSObject+JSON2MODE.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C7B0F71C7312B300C321AF /* NSObject+JSON2MODE.m */; };
+		B9C7B1031C73FE3A00C321AF /* weibo.json in Resources */ = {isa = PBXBuildFile; fileRef = B9C7B1021C73FE3A00C321AF /* weibo.json */; };
+		B9C7B1061C740DE000C321AF /* mode.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C7B1051C740DE000C321AF /* mode.m */; };
+		B9C7B10C1C74174E00C321AF /* NSMutableArray+MODEProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C7B10B1C74174E00C321AF /* NSMutableArray+MODEProperty.m */; };
 		B9FFF2231C69A20100306E37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FFF2221C69A20100306E37 /* main.m */; };
 		B9FFF2261C69A20100306E37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FFF2251C69A20100306E37 /* AppDelegate.m */; };
 		B9FFF2291C69A20100306E37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FFF2281C69A20100306E37 /* ViewController.m */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9C7B0F61C7312B300C321AF /* NSObject+JSON2MODE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON2MODE.h"; sourceTree = "<group>"; };
+		B9C7B0F71C7312B300C321AF /* NSObject+JSON2MODE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON2MODE.m"; sourceTree = "<group>"; };
+		B9C7B1021C73FE3A00C321AF /* weibo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo.json; sourceTree = "<group>"; };
+		B9C7B1041C740DE000C321AF /* mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mode.h; sourceTree = "<group>"; };
+		B9C7B1051C740DE000C321AF /* mode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mode.m; sourceTree = "<group>"; };
+		B9C7B10A1C74174E00C321AF /* NSMutableArray+MODEProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MODEProperty.h"; sourceTree = "<group>"; };
+		B9C7B10B1C74174E00C321AF /* NSMutableArray+MODEProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MODEProperty.m"; sourceTree = "<group>"; };
 		B9FFF21E1C69A20100306E37 /* JSON2MODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSON2MODE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FFF2221C69A20100306E37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9FFF2241C69A20100306E37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +89,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9C7B0F91C731D2900C321AF /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				B9C7B1041C740DE000C321AF /* mode.h */,
+				B9C7B1051C740DE000C321AF /* mode.m */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+		B9C7B10D1C741C2F00C321AF /* jsonTool */ = {
+			isa = PBXGroup;
+			children = (
+				B9C7B0F61C7312B300C321AF /* NSObject+JSON2MODE.h */,
+				B9C7B0F71C7312B300C321AF /* NSObject+JSON2MODE.m */,
+				B9C7B10A1C74174E00C321AF /* NSMutableArray+MODEProperty.h */,
+				B9C7B10B1C74174E00C321AF /* NSMutableArray+MODEProperty.m */,
+			);
+			name = jsonTool;
+			sourceTree = "<group>";
+		};
+		B9C7B10E1C741C4700C321AF /* TestController */ = {
+			isa = PBXGroup;
+			children = (
+				B9FFF2241C69A20100306E37 /* AppDelegate.h */,
+				B9FFF2251C69A20100306E37 /* AppDelegate.m */,
+				B9FFF2271C69A20100306E37 /* ViewController.h */,
+				B9FFF2281C69A20100306E37 /* ViewController.m */,
+			);
+			name = TestController;
+			sourceTree = "<group>";
+		};
 		B9FFF2151C69A20100306E37 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +143,12 @@
 		B9FFF2201C69A20100306E37 /* JSON2MODE */ = {
 			isa = PBXGroup;
 			children = (
-				B9FFF2241C69A20100306E37 /* AppDelegate.h */,
-				B9FFF2251C69A20100306E37 /* AppDelegate.m */,
-				B9FFF2271C69A20100306E37 /* ViewController.h */,
-				B9FFF2281C69A20100306E37 /* ViewController.m */,
+				B9C7B10E1C741C4700C321AF /* TestController */,
+				B9C7B10D1C741C2F00C321AF /* jsonTool */,
+				B9C7B0F91C731D2900C321AF /* mode */,
 				B9FFF22A1C69A20100306E37 /* Main.storyboard */,
 				B9FFF22D1C69A20100306E37 /* Assets.xcassets */,
+				B9C7B1021C73FE3A00C321AF /* weibo.json */,
 				B9FFF22F1C69A20100306E37 /* LaunchScreen.storyboard */,
 				B9FFF2321C69A20100306E37 /* Info.plist */,
 				B9FFF2211C69A20100306E37 /* Supporting Files */,
@@ -245,6 +287,7 @@
 			files = (
 				B9FFF2311C69A20100306E37 /* LaunchScreen.storyboard in Resources */,
 				B9FFF22E1C69A20100306E37 /* Assets.xcassets in Resources */,
+				B9C7B1031C73FE3A00C321AF /* weibo.json in Resources */,
 				B9FFF22C1C69A20100306E37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C7B1061C740DE000C321AF /* mode.m in Sources */,
 				B9FFF2291C69A20100306E37 /* ViewController.m in Sources */,
+				B9C7B10C1C74174E00C321AF /* NSMutableArray+MODEProperty.m in Sources */,
 				B9FFF2261C69A20100306E37 /* AppDelegate.m in Sources */,
+				B9C7B0F81C7312B300C321AF /* NSObject+JSON2MODE.m in Sources */,
 				B9FFF2231C69A20100306E37 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSON2MODE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ztak.JSON2MODE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSON2MODE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ztak.JSON2MODE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +544,7 @@
 				B9FFF24D1C69A20100306E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9FFF24E1C69A20100306E37 /* Build configuration list for PBXNativeTarget "JSON2MODETests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +553,7 @@
 				B9FFF2501C69A20100306E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9FFF2511C69A20100306E37 /* Build configuration list for PBXNativeTarget "JSON2MODEUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +562,7 @@
 				B9FFF2531C69A20100306E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
