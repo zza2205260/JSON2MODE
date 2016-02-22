@@ -64,5 +64,18 @@
 }
 
 
+-(NSString *)modelToString{
+    if (!self) {
+        NSLog(@"WARING : MODE IS NULL , %s",__FUNCTION__);
+        return nil;
+    }
+    NSDictionary * dict = [self MODE2JSON];
+    NSError *parseError = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
 
 @end

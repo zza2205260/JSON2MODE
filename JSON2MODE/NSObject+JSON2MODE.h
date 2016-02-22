@@ -10,5 +10,12 @@
 
 @interface NSObject (JSON2MODE)
 -(instancetype)JSON2MODE:(NSDictionary *) json; // > json 转 类
+
+
 -(NSMutableDictionary *)MODE2JSON; // 类 转 json
+
+
+-(NSString *)modelToString; // > 类转字典并转成String
+
+
 @end

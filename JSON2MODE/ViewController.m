@@ -50,6 +50,7 @@
     mode * _m = array[0];
     NSDictionary * d  = [_m MODE2JSON];
     NSLog(@"%@",d);
+    
 }
 
 - (void)didReceiveMemoryWarning {
